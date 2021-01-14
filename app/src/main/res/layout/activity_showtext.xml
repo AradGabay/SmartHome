@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:gravity="center"
+    tools:context=".Showtext">
+
+    <Space
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="25"/>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_weight="50">
+
+
+        <EditText
+            android:id="@+id/edtchild"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Type ID"
+            android:gravity="center"/>
+        <EditText
+            android:id="@+id/edtvalue"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Type value"
+            android:gravity="center"/>
+        <Button
+            android:onClick="upload"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Upload"/>
+        <TextView
+            android:id="@+id/txt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Text will be shown here"
+            android:gravity="center"/>
+        <Button
+            android:onClick="download"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="download By ID"/>
+
+
+
+
+
+    </LinearLayout>
+
+
+
+    <Space
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="25"/>
+
+
+
+</LinearLayout>
